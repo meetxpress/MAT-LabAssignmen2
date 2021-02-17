@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Q1 extends AppCompatActivity {
+public class q1 extends AppCompatActivity {
     int num1, num2;
     EditText n1, n2;
 
@@ -23,7 +23,7 @@ public class Q1 extends AppCompatActivity {
         n2 = findViewById(R.id.num2);
     }
 
-    public void gotoActivity(View v) {
+    public void gotoActivity1(View v) {
         if ((TextUtils.isEmpty(n1.getText().toString())) || (n1.equals(0))) {
             Toast.makeText(getApplicationContext(), "First number is either null or zero", Toast.LENGTH_SHORT).show();
         } else if ((TextUtils.isEmpty(n2.getText().toString())) || (n2.equals(0))) {

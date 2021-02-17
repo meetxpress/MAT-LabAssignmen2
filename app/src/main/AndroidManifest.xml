@@ -10,12 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LabAssignmen1">
         <activity
-            android:name=".SplashScreen"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:name=".q3_home"
+            android:label="Question Home"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".Q1"
+            android:name=".q3_login"
+            android:label="Question 3 Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".q3_splash_screen"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".q2_sec"
+            android:label="Question 2_2"
+            android:parentActivityName=".q2" />
+        <activity
+            android:name=".q2"
+            android:label="Question 2_1"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".q1"
             android:label="Question 1"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

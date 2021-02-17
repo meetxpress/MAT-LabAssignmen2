@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Q1">
+    tools:context=".q1">
 
     <EditText
         android:id="@+id/num1"
@@ -34,20 +34,22 @@
 
     <Button
         android:id="@+id/btnSum"
-        android:onClick="gotoActivity"
+        android:onClick="gotoActivity1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
         android:text="+"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num2" />
+        app:layout_constraintTop_toBottomOf="@+id/num2"
+        app:layout_constraintEnd_toStartOf="@+id/btnSub"/>
 
     <Button
         android:id="@+id/btnSub"
-        android:onClick="gotoActivity"
+        android:onClick="gotoActivity1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -61,20 +63,22 @@
 
     <Button
         android:id="@+id/btnMulti"
-        android:onClick="gotoActivity"
+        android:onClick="gotoActivity1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginTop="30dp"
         android:text="*"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSum" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSum"
+        app:layout_constraintEnd_toStartOf="@+id/btnDiv"/>
 
     <Button
         android:id="@+id/btnDiv"
-        android:onClick="gotoActivity"
+        android:onClick="gotoActivity1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
