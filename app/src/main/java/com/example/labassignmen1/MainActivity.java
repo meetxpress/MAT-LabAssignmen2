@@ -36,6 +36,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), q3_splash_screen.class));
                 break;
 
+            case R.id.btnQ4:
+                startActivity(new Intent(getApplicationContext(), q4.class));
+                break;
+
+            case R.id.btnQ5:
+                startActivity(new Intent(getApplicationContext(), q5.class));
+                break;
+
+            case R.id.btnQ6:
+                startActivity(new Intent(getApplicationContext(), q6.class));
+                break;
+
+            case R.id.btnQ7:
+                startActivity(new Intent(getApplicationContext(), q7.class));
+                break;
+
             default:
                 break;
         }

@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.labassignmen1">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LabAssignmen1">
+        <activity
+            android:name=".q7"
+            android:label="Question 7"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".q6"
+            android:label="Question 6"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".q5"
+            android:label="Question 5"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".q4"
+            android:label="Question 4"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".q3_home"
             android:label="Question Home"
