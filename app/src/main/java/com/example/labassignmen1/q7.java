@@ -13,8 +13,4 @@ public class q7 extends AppCompatActivity {
         setContentView(R.layout.activity_q7);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
     }
-
-    public void gotoActivty7(View v){
-
-    }
 }
