@@ -2,7 +2,9 @@ package com.example.labassignmen1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -10,9 +12,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ConcurrentModificationException;
+
 public class q3_login extends AppCompatActivity {
     EditText uname, pass;
-String username, password;
+    String username, password;
+    SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,16 +35,17 @@ String username, password;
         } else if (TextUtils.isEmpty(pass.getText().toString())) {
             Toast.makeText(getApplicationContext(), "Password is empty.", Toast.LENGTH_SHORT).show();
         } else {
-            username=uname.getText().toString();
-            password=pass.getText().toString();
-            Log.d("uname", username);
-            Log.d("pass", password);
+            username = uname.getText().toString();
+            password = pass.getText().toString();
 
-            if((username.equals("test")) || (password.equals("testuser"))){
+            sharedPreferences = getSharedPreferences("mypref", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor=sharedPreferences.edit();
+
+            if ((username.equals("test")) || (password.equals("testuser"))) {
                 Intent i = new Intent(getApplicationContext(), q3_home.class);
                 i.putExtra("uname", username);
                 startActivity(i);
-            } else{
+            } else {
                 Toast.makeText(getApplicationContext(), "Invalid Username or Password.", Toast.LENGTH_SHORT).show();
             }
         }
